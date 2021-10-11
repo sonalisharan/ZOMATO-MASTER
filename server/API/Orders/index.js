@@ -1,9 +1,11 @@
 import express from "express";
+import passport from "passport";
 
 //Database Model
-import {OrderModel} from "../../database/Allmodel";
+import {OrderModel} from "../../database/allModels";
 
 const Router = express.Router();
+
 
 /*
 Route           /
@@ -12,7 +14,7 @@ Params          _id
 Access          public
 Method          GET
 */
-Router.get("/:_id", async(req,res)=> {
+Router.get("/:_id", passport.authenticate("jwt", {session: false})  ,async(req,res)=> {
     try{
         const { _id } = req.params;
         const getOrders = await OrderModel.findOne({user: _id});

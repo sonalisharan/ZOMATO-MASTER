@@ -1,6 +1,6 @@
 import express from "express";
 
-import {ReviewModel} from "../../database/Allmodel";
+import {ReviewModel} from "../../database/allModels";
 
 const Router = express.Router();
 

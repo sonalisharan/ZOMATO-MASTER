@@ -74,13 +74,13 @@ Access        Public
 Method        GET
 */
 
-/*Router.get("/google", passport.authenticate("google",{
+Router.get("/google", passport.authenticate("google",{
 scope: [
   "https://www.googleapis.com/auth/userinfo.profile",
   "https://www.googleapis.com/auth/userinfo.email"
 ],
 })
-);*/
+);
 
 /*
 Route         /google/callback
@@ -90,11 +90,11 @@ Access        Public
 Method        GET
 */
 
-/*Router.get("/google/callback", passport.authenticate("google",{failureRedirect: "/"}),
+Router.get("/google/callback", passport.authenticate("google",{failureRedirect: "/"}),
 (req,res) => {
   return res.json({token: req.session.passport.user.token});
 }
-);*/
+);
 
 export default Router;
 

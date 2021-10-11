@@ -5,7 +5,7 @@ import AWS from "aws-sdk";
 import multer from "multer";
 
 //Databse model
-import {ImageModel} from "../../database/Allmodel";
+import {ImageModel} from "../../database/allModels";
 
 //Utilities
 import {s3Upload} from "../../Utilities/AWS/s3";

@@ -1,12 +1,12 @@
 // Libraries
 import express from "express";
-//import passport from "passport";
+import passport from "passport";
 
 //Database Model 
-import {FoodModel} from "../../database/Allmodel";
+import {FoodModel} from "../../database/allModels";
 
 //Validations
-import {ValidataRestaurantId, ValidateCategory} from "../../validation/food";
+import {ValidateRestaurantId, ValidateCategory} from "../../validation/food";
 
 const Router = express.Router();
 
