@@ -1,6 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom"; 
-
+import { useParams } from "react-router-dom";
 import { useDispatch } from "react-router";
 //Components
 import Navbar from "../Components/Navbar";

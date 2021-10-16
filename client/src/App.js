@@ -10,8 +10,7 @@ function App() {
     <>
     <HomeLayoutHOC path="/" exact component={Temp}/>
     <HomeLayoutHOC path="/:type" exact component={Master}/>
-    <RestaurantLayout path="restaurant/:id" exact component ={xyz} />
-     </>
+    </>
   )
 }
 
